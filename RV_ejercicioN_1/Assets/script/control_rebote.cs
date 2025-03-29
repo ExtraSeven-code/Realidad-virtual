@@ -5,26 +5,25 @@ using System.Collections;
 
 public class control_rebote : MonoBehaviour
 {
-    public Player scriptrebote;
     public UnityEvent OnXRPointerEnter;
     public UnityEvent OnXRPointerExit;
-    [SerializeField] private GameObject esfere;
+    public Player scriptrebote;
+
 
     void Start()
     {
-        
     }
 
     public void OnPointerEnterXR()
     {
+        scriptrebote.enabled = false;
         OnXRPointerEnter?.Invoke();
-        scriptrebote.enabled = true;
     }
 
     public void OnPointerExitXR()
     {
-        OnXRPointerExit?.Invoke();
-        scriptrebote.enabled = true;
+        scriptrebote.enabled = false;
+        OnXRPointerEnter?.Invoke();
     }
 
     public void OnPointerClickXR()
