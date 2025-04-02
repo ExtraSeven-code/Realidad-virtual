@@ -17,12 +17,14 @@ public class control_rebote : MonoBehaviour
     public void OnPointerEnterXR()
     {
         scriptrebote.enabled = false;
+        GazeManager.Instance.SetUpGaze(1.5f);
         OnXRPointerEnter?.Invoke();
     }
 
     public void OnPointerExitXR()
     {
         scriptrebote.enabled = false;
+        GazeManager.Instance.SetUpGaze(2.5f);
         OnXRPointerEnter?.Invoke();
     }
 
