@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ball : MonoBehaviour {
 
-	public Player player;
+	public Player_ping player;
 	public float speed = 2.5f;
 	public float speedIncrement = 0.5f;
 	public float deflectionDepth = 6f;

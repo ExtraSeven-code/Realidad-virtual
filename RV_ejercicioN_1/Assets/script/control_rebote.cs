@@ -7,7 +7,7 @@ public class control_rebote : MonoBehaviour
 {
     public UnityEvent OnXRPointerEnter;
     public UnityEvent OnXRPointerExit;
-    public Player scriptrebote;
+    public Player_ping scriptrebote;
 
 
     void Start()
