@@ -6,17 +6,24 @@ using TMPro;
 public class GameController : MonoBehaviour {
 
 	public TextMeshProUGUI infoText;
-	public GameObject ball;
+	public TextMeshProUGUI cuantas_ganadas;
+	public TextMeshProUGUI cuantas_perdidas;
+
+    public GameObject ball;
 	public Player_vasitos player;
 	public Cup[] cups;
+	public int gano;
 
 	private float resetTimer = 3f;
 
 	// Use this for initialization
 	void Start () {
 		infoText.text = "Seleccionar el vasito correcto!";
+		cuantas_ganadas.text = "Acertado: " + PlayerPrefs.GetInt("conteo_de_ganadas", 0).ToString();
+        cuantas_perdidas.text = "No Acertados: "+ PlayerPrefs.GetInt("conteo_de_perdidas", 0).ToString();
 
-		StartCoroutine (ShuffleRoutine());
+
+        StartCoroutine(ShuffleRoutine());
 	}
 	
 	// Update is called once per frame
@@ -24,15 +31,28 @@ public class GameController : MonoBehaviour {
 		if (player.picked) {
 			if (player.won) {
 				infoText.text = "Tu Ganaste!";
+				gano = 1;
+				
 			} else {
 				infoText.text = "Tu Perdiste :( Volver a intentar!";
-			}
+                gano = 1;
+            }
 
 			resetTimer -= Time.deltaTime;
 			if (resetTimer <= 0f) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+				if (gano == 1)
+				{
+					PlayerPrefs.SetInt("conteo_de_ganadas", PlayerPrefs.GetInt("conteo_de_ganadas", 0) + 1);
+				}
+				if (gano == 0)
+				{
+					PlayerPrefs.SetInt("conteo_de_perdidas", PlayerPrefs.GetInt("conteo_de_perdidas", 0) + 1);
+				}
 			}
-		}
+			
+
+        }
 	}
 
 	private IEnumerator ShuffleRoutine () {
