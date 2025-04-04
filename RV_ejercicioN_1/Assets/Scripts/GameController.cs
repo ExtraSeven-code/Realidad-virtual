@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		infoText.text = "Seleccionar el vasito correcto!";
-		cuantas_ganadas.text = "Acertado: " + PlayerPrefs.GetInt("conteo_de_ganadas", 0).ToString();
+        cuantas_ganadas.text = "Acertado: " + PlayerPrefs.GetInt("conteo_de_ganadas", 0).ToString();
         cuantas_perdidas.text = "No Acertados: "+ PlayerPrefs.GetInt("conteo_de_perdidas", 0).ToString();
 
 
@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour {
 				
 			} else {
 				infoText.text = "Tu Perdiste :( Volver a intentar!";
-                gano = 1;
+                gano = 0;
             }
 
 			resetTimer -= Time.deltaTime;
