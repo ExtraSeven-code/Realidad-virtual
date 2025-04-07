@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.28.0/Hello Cardboard/Scenes/VrMode.unity
     guid: a45c80a4da1fa4625a30ce04b599e90d
+  - enabled: 1
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.28.0/Hello Cardboard/Scenes/Menu_Game_Over.unity
+    guid: 4be60df29a54d5846bbbea6bc7e975fd
+  - enabled: 1
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.28.0/Hello Cardboard/Scenes/Juego_principal_vr.unity
+    guid: 0498c02e4678aa840a65d1014082947f
   m_configObjects: {}

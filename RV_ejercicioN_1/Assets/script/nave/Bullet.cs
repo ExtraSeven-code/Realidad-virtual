@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 1f;
     public Vector3 direction;
-    private float lifetime = 2f;
+    private float lifetime = 20f;
             
     // Update is called once per frame
     void Update()
@@ -24,6 +24,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            Debug.Log("destruir");
         }
     }
 }
