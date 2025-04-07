@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &39212792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2305158326051495779, guid: 2f0432d3a9594db438d41ca88128c4a1, type: 3}
-  m_PrefabInstance: {fileID: 895023112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389255504
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2305158326965436007, guid: 2f0432d3a9594db438d41ca88128c4a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.15
+      value: 11.5
       objectReference: {fileID: 0}
     - target: {fileID: 2305158326965436007, guid: 2f0432d3a9594db438d41ca88128c4a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -538,7 +533,6 @@ GameObject:
   - component: {fileID: 959308598}
   - component: {fileID: 959308599}
   - component: {fileID: 959308600}
-  - component: {fileID: 959308601}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -685,24 +679,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.21, y: 5.66, z: -6.88}
+  m_Size: {x: 6.21, y: 5.66, z: 6.88}
   m_Center: {x: 0, y: 0, z: 2.56}
---- !u!114 &959308601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959308587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f75984ba058ea499fe4eddc31b628b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointer: {fileID: 39212792}
-  maxDistancePointer: 4.5
-  distPointerObject: 0.95
-  hitPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &1250916459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2305158326965436007, guid: 2f0432d3a9594db438d41ca88128c4a1, type: 3}
