@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 959308591}
   - component: {fileID: 959308589}
   - component: {fileID: 959308598}
-  - component: {fileID: 959308599}
   - component: {fileID: 959308600}
   m_Layer: 0
   m_Name: Main Camera
@@ -641,25 +640,6 @@ MonoBehaviour:
   verticalSpeed: 1
   rotationX: 0
   rotationY: 0
---- !u!114 &959308599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959308587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1205332aaf739094cbdf4bc6000ac249, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameCamera: {fileID: 959308592}
-  bulletPrefab: {fileID: 1113733492786601171, guid: 7fac52f24c47a3c4cad00ee586a6a515, type: 3}
-  enemyPrefab: {fileID: 872407883590772226, guid: 6a253630ebd31ae4cb7e5aba6bcb75cf, type: 3}
-  puntaje: {fileID: 761114589}
-  enemySpawningCooldown: 1
-  enemySpawningDistance: 7
-  shootingCooldown: 0.5
 --- !u!65 &959308600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -852,6 +832,57 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &1383997708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383997710}
+  - component: {fileID: 1383997709}
+  m_Layer: 0
+  m_Name: gamecontroller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1383997709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383997708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1205332aaf739094cbdf4bc6000ac249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 959308592}
+  bulletPrefab: {fileID: 1113733492786601171, guid: 7fac52f24c47a3c4cad00ee586a6a515, type: 3}
+  enemyPrefab: {fileID: 872407883590772226, guid: 6a253630ebd31ae4cb7e5aba6bcb75cf, type: 3}
+  puntaje: {fileID: 761114589}
+  enemySpawningCooldown: 1
+  enemySpawningDistance: 7
+  shootingCooldown: 0.5
+--- !u!4 &1383997710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383997708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.423983, y: 19.461311, z: -307.87228}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1440278993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7c5e526734081498bba57d7d8e4cc613, type: 3}
@@ -1025,3 +1056,4 @@ SceneRoots:
   - {fileID: 1537245941}
   - {fileID: 2006755694}
   - {fileID: 959308593}
+  - {fileID: 1383997710}
