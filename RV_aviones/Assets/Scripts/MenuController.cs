@@ -26,11 +26,11 @@ public class MenuController : MonoBehaviour
     }
     public void reiniciar()
     {
-        SceneManager.LoadScene("Juego_principal_vr");
+        SceneManager.LoadScene("juego_naves");
     }
     public void game_over()
     {
-        SceneManager.LoadScene("Menu_Game_Over");
+        SceneManager.LoadScene("Menu_Game_over");
     }
     public void EndGame() { 
         Application.Quit();
