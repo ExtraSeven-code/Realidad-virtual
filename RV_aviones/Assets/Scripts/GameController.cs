@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using TMPro;
 public class GameController : MonoBehaviour
 {
     #region Referencias a Objetos en el juego
     public Camera gameCamera;
     public GameObject bulletPrefab;
     public GameObject enemyPrefab;
-    [SerializeField] Text puntaje;
+    [SerializeField] TextMeshProUGUI puntaje;
     #endregion
 
     #region Configuración de temporizadores y puntaje
